@@ -1,4 +1,7 @@
-# Data Description:
+# March Madness 2010-2019 Data Description
+
+This repository contains (or will contain) result and play-by-play data from 2010 to 2019 in R Dataset (`.rds`) form.
+
 ## Note for Stage 2:
 
 All of the data files have been updated through the end of the current regular season. You can find everything you need in these four files:

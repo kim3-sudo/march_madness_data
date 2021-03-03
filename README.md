@@ -1,6 +1,12 @@
 # March Madness 2010-2019 Data Description
 
-This repository contains (or will contain) result and play-by-play data from 2010 to 2019 in R Dataset (`.rds`) form.
+This repository contains result and play-by-play data from 2010 to 2019 in R Dataset (`.rds`) form. You can get the data straight from the Internet and this GitHub repository for the datasets that you'd like to use.
+
+To use the `.rds` file, go to the file that you'd like to use. GitHub is unable to render these files, but you can right-click on the raw file and copy the link for it. Then, use the `readRDS` function in R to read the dataset in. That might look something like this. Here, I'll read in the RDS for the 2010 play-by-play data into an object called `pbp2010`.
+
+```R
+pbp2010 <- readRDS(url('https://github.com/kim3-sudo/march_madness_data/blob/main/PlayByPlay_2010/Events_2010.rds?raw=true'))
+```
 
 ## Note for Stage 2:
 

@@ -5,8 +5,7 @@ To use the :code:`.rds` file in Python, go to the file that you'd like to use. G
 
 You may also need to get the pyreadr library, if you don't already have it in your Python installation. You can get it using:
 
-.. code-block:: bash
-  :linenos:
+::
   pip install pyreadr
 
 .. code-block:: python

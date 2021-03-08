@@ -39,4 +39,5 @@ as they become available.
 
   usage/variables
   usage/rusage
+  usage/pyusage
   usage/about

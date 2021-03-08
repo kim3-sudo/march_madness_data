@@ -12,7 +12,12 @@ You may also need to get the pyreadr library, if you don't already have it in yo
   :linenos:
   
   import pyreadr
-  result = pyreadr.read_r('https://github.com/kim3-sudo/march_madness_data/blob/main/PlayByPlay_2010/Events_2010.rds?raw=true')
+  url = "https://github.com/kim3-sudo/march_madness_data/blob/main/PlayByPlay_2010/Events_2010.rds?raw=true"
+  scratch = "./pbp2010.rda"
+  local = pyreadr.download_file(url, scratch)
+  result = pyreadr.read_r(local)
   df = result[None]
+
+If you are reading the file straight off of the repository, you need to first download it into a temporary or scratch location using the :code:`download_file()` function from the pyreadr library. You can then load in the file directly from your scratch location. :code:`read_r()` does not support Internet URLs.
 
 When you use the :code:`read_r()` function, it loads the contents of the RDS into a dictionary where keys are the names of objects and the values are Python objects. Since RDS files only have one object, use :code:`None` as the key.
